@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="./img/agenda_icon.svg" type="image/x-icon">
+
+  <script src="scripts.js" defer></script>
+  <title>Agenda de Contatos</title>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <img src="./img/agenda_icon.svg" alt="'">
+      <h1>Agenda de Contatos</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <label for="nome">Nome do Contato:</label>
+          <input type="text" name="nome" id="nome" placeholder="Nome" required>
+          <label for="telefone">Número do Contato:</label>
+          <input type="tel" name="telefone" id="telefone" placeholder="(DDD)00000-0000" minlength="9" maxlength="14" required>
+        </fieldset>
+        <button>Cadastrar</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+
+</html>
