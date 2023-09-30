@@ -1,12 +1,12 @@
 $(document).ready(function () {
   const itemsList = $("<ul></ul>");
-  const inputedValue = $('#tarefa').val();
-
+  
   console.dir(itemsList)
-
+  
   $('form').on('submit', function (event) {
     event.preventDefault();
-
+    
+    const inputedValue = $('#tarefa').val();
     const listItem = $(`<li>${inputedValue}</li>`);
 
     itemsList.insertAfter('form');
