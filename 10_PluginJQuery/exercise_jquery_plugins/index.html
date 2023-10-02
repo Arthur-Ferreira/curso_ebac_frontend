@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+    integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+    integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/localization/messages_pt_BR.min.js"
+    integrity="sha512-PHX1u45elKeOnEy2N3H1tVwyKDD8EQtnmNqNQ8LfMXj09a+JjfX9wWSwr61nvRzJZsLt1/YRkhUyJmv/sbRuCA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+  <script src="scripts.js" defer></script>
+
+  <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+  <main>
+    <h1>Formulário de Cadastro</h1>
+    <form>
+      <fieldset>
+        <p>
+          <label for="full-name">Informe seu nome completo:</label>
+          <input type="text" name="full-name" id="full-name" placeholder="Nome completo">
+        </p>
+        <p>
+          <label for="cpf">Informe o número do seu CPF:</label>
+          <input type="text" name="cpf" id="cpf" placeholder="Número do CPF">
+        </p>
+      </fieldset>
+      <fieldset>
+        <p>
+          <label for="email">Informe seu e-mail de contato:</label>
+          <input type="email" name="email" id="email" placeholder="E-mail de contato">
+        </p>
+        <p>
+          <label for="phone-number">Informe seu número de contato:</label>
+          <input type="tel" name="phone-number" id="phone-number" placeholder="Número de contato">
+        </p>
+      </fieldset>
+      <fieldset>
+        <p>
+          <label for="address">Informe seu endereço:</label>
+          <input type="text" name="address" id="address" placeholder="Rua Exemplo, n 73573, Bairro ExemploBairro">
+        </p>
+        <p>
+          <label for="postal-code">Informe o CEP de seu bairro:</label>
+          <input type="text" name="postal-code" id="postal-code" placeholder="12345-123">
+        </p>
+      </fieldset>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+</body>
+
+</html>
