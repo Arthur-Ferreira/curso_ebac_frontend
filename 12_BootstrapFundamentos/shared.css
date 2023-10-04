@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  background-color: #cecece;
+  display: grid;
+  place-content: center;
+}
+
+form {
+  max-width: 48rem;
+}
+
+.error {
+  color: red;
+}
