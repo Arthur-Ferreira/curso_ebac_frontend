@@ -1,0 +1,17 @@
+{
+  "name": "sass_exercise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch styles/:/styles.css",
+    "sass": "sass styles/:/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arthuur Ferreira",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.69.4"
+  }
+}
