@@ -1,0 +1,27 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arthur Ferreira",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.6.1",
+    "gulp": "4.0.2",
+    "gulp-babel": "7.0.1",
+    "gulp-concat": "2.6.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "3.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-htmlmin": "^5.0.1"
+  },
+  "dependencies": {
+    "sass": "^1.69.4"
+  }
+}
