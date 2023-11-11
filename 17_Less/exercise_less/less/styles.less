@@ -1,0 +1,130 @@
+@import '_vars';
+@import '_mixins';
+@import '_escaping';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: @body-background-color;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1024px;
+  .w100();
+  margin: 0 auto;
+
+  @media screen and (@desktop) {
+    max-width: 80%;
+  }
+}
+
+header {
+  background-color: @header-background-color;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  .container {
+    .flex();
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
+}
+
+.menu {
+  .flex();
+
+  li {
+    font-weight: bold;
+    margin-left: 24px;
+
+    a {
+      color: @menu-text-color;
+      text-decoration: none;
+    }
+  }
+}
+
+section {
+  padding: 56px 0;
+}
+
+.products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  .w100();
+
+  @media screen and (@desktop) {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+
+  @media screen and (@tablet) {
+    .block();
+  }
+
+
+  .product-item {
+    @media screen and (@tablet) {
+      margin-bottom: 32px;
+    }
+  }
+
+  .product-item img {
+    .w100();
+    border-radius: 16px;
+  }
+
+  .product-button {
+    .block();
+    background-color: #colors[button-background];
+    color: @menu-text-color;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #colors[action-background];
+    }
+  }
+}
+
+footer {
+  .w100();
+  background-color: @header-background-color;
+  color: @menu-text-color;
+  height: 60px;
+
+  .container {
+    margin: 0 auto;
+
+    .flex();
+    align-items: center;
+    justify-content: space-between;
+    height: 100%
+  }
+
+
+  ul {
+    .flex();
+    align-items: center;
+    gap: 10px;
+  }
+}
+

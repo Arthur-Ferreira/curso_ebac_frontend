@@ -1,0 +1,15 @@
+{
+  "name": "less",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "less": "less-watch-compiler ./less ./styles",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arthur Ferreira",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^4.1.3",
+    "less-watch-compiler": "^1.16.3"
+  }
+}
