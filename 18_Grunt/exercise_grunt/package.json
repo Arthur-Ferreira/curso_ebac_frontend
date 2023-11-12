@@ -1,0 +1,26 @@
+{
+  "name": "grunt_exercise",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "grunt": "grunt",
+    "build": "grunt build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Less",
+    "Grunt",
+    "JavaScript",
+    "HTML5",
+    "CSS3"
+  ],
+  "author": "Arthur Ferreira",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^5.1.0"
+  }
+}
