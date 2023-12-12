@@ -32,13 +32,26 @@ class Golden extends Dog {
   }
 }
 
+class Pug extends Dog {
+  constructor() {
+    super('Princesa', 6.5, 'white', 'Nisa');
+  }
+
+  princesaBarks() {
+    console.log('Raw Raw Raw Raw! Raw RaaaraW!');
+  }
+}
+
 
 const bullDog = new Dog('Toro', 12.5, 'brown', 'Arthur');
 const solGolden = new Golden;
+const princesaPug = new Pug;
 
 console.log(bullDog.barks());
 console.log(solGolden.barks());
+
 console.log(solGolden.solBarks());
+console.log(princesaPug.princesaBarks());
 
 
 console.log(bullDog instanceof Dog);
